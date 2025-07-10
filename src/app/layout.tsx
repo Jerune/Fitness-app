@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Zain, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import StyledComponentsRegistry from "@/lib/registry";
 
-const inter = Inter({
+const inter = Zain({
   subsets: ['latin'],
+  weight: ['400'],
   variable: '--font-body',
 });
 
