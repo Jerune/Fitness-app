@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Zain, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import StyledComponentsRegistry from "@/lib/registry";
 
 const inter = Zain({
   subsets: ['latin'],
@@ -28,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${playfair.variable}`}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        {children}
       </body>
     </html>
   );
